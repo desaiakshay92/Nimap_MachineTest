@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework import viewsets
 from Test.models import Client,Project,User
 from Test.serializer import ClientSerializer, ProjectSerializer, UserSerializer
-from rest_framework.permissions import IsAuthenticated,IsAdminUser
+from rest_framework.permissions import IsAdminUser
 
 # Create your views here.
 class ClientViewset(viewsets.ModelViewSet):
